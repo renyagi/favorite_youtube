@@ -1,20 +1,20 @@
 import React from "react";
 import { Input } from "@chakra-ui/react";
-import theme from "../../theme.js";
+import theme from "../../../theme";
 
-interface Props {
-  placeholder: string;
-  value: string;
-  width: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+interface Input_Props {
+  placeholder?: string;
+  value?: string;
+  width?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Input_frame = ({
+const Input_frame = ({
   placeholder = "placeholder",
   value,
   width = "400px",
   onChange,
-}: Props) => {
+}: Input_Props) => {
   return (
     <Input
       backgroundColor={theme.colors.gray_light}
@@ -31,3 +31,5 @@ export const Input_frame = ({
     />
   );
 };
+
+export { Input_frame, Input_Props };

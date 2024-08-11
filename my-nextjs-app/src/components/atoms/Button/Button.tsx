@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import theme from "../../theme.js";
+import theme from "../../../theme";
 
 interface Props {
   label: string;
