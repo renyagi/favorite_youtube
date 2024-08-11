@@ -1,7 +1,7 @@
-import React from 'react';
-import { Button } from '@chakra-ui/react';
-import styled from '@emotion/styled';
-import theme from '../../theme.js';
+import React from "react";
+import { Button } from "@chakra-ui/react";
+import styled from "@emotion/styled";
+import theme from "../../theme.js";
 
 interface Props {
   label: string;
@@ -19,13 +19,13 @@ export const Button_frame = ({
       backgroundColor={theme.colors.black}
       borderColor={theme.colors.black}
       borderRadius="12px"
-      onClick={onClick}
       transition="0.2s"
       width={width}
       _hover={{
         bg: theme.colors.gray,
         borderColor: theme.colors.gray,
       }}
+      onClick={onClick}
     >
       <Text>
         {label}
