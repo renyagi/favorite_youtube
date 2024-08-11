@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Form_frame } from "./Form";
 
 const meta: Meta<typeof Form_frame> = {
-  title: "Components/Form_frame",
+  title: "Components/Molecules/Form_frame",
   component: Form_frame,
   parameters: {
     layout: "centered",
