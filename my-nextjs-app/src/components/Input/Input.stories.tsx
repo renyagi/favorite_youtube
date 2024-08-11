@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button_frame } from "./Button";
+import { Input_frame } from "./Input";
 
-const meta: Meta<typeof Button_frame> = {
-  title: "Components/Button_frame",
-  component: Button_frame,
+const meta: Meta<typeof Input_frame> = {
+  title: "Components/Input_frame",
+  component: Input_frame,
   parameters: {
     layout: "centered",
   },
@@ -12,7 +12,7 @@ const meta: Meta<typeof Button_frame> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Button_frame>;
+type Story = StoryObj<typeof Input_frame>;
 
 export const Default: Story = {
   args: {},
