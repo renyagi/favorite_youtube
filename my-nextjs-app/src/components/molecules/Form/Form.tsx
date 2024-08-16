@@ -6,20 +6,25 @@ import theme from "../../../theme";
 
 interface Form_Props {
   input_Props?: Input_Props;
+  isSub?: boolean;
   label?: string;
   link_props?: Link_Props;
+  width?: string;
 }
 
 const Form_frame = ({
   input_Props,
+  isSub = false,
   label = "label",
   link_props,
+  width = "400px",
 }: Form_Props) => {
   return (
     <FormControl
       display="flex"
       flexDirection="column"
       gap="8px"
+      width={width}
     >
       <FormLabel
         color={theme.colors.black}
@@ -34,7 +39,7 @@ const Form_frame = ({
         width={input_Props?.width}
         onChange={input_Props?.onChange}
       />
-      {link_props?.label != "label" && (
+      {isSub && (
         <Box
           alignItems="center"
           display="flex"

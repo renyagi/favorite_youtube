@@ -4,9 +4,9 @@ import styled from "@emotion/styled";
 import theme from "../../../theme";
 
 interface Button_Props {
-  label: string;
-  width: string;
-  onClick: () => void;
+  label?: string;
+  width?: string;
+  onClick?: () => void;
 }
 
 const Button_frame = ({
