@@ -3,17 +3,17 @@ import { Button } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import theme from "../../../theme";
 
-interface Props {
+interface Button_Props {
   label: string;
   width: string;
   onClick: () => void;
 }
 
-export const Button_frame = ({
+const Button_frame = ({
   label = "label",
   width = "200px",
   onClick,
-}: Props) => {
+}: Button_Props) => {
   return (
     <Button
       backgroundColor={theme.colors.black}
@@ -45,3 +45,5 @@ const Text = styled.div`
   width: 100%;
 `;
 
+export type { Button_Props };
+export { Button_frame };
