@@ -1,16 +1,19 @@
 import React from "react";
-import { FormControl, FormLabel } from "@chakra-ui/react";
-import { Input_frame, Input_Props } from "../../atoms/Input/Input"
+import { Box, FormControl, FormLabel } from "@chakra-ui/react";
+import { Input_frame, Input_Props } from "../../atoms/Input/Input";
+import { Link_frame, Link_Props } from "../../atoms/Link/Link";
 import theme from "../../../theme";
 
 interface Form_Props {
-  label?: string;
   input_Props?: Input_Props;
+  label?: string;
+  link_props?: Link_Props;
 }
 
 const Form_frame = ({
-  label = "label",
   input_Props,
+  label = "label",
+  link_props,
 }: Form_Props) => {
   return (
     <FormControl
@@ -31,8 +34,22 @@ const Form_frame = ({
         width={input_Props?.width}
         onChange={input_Props?.onChange}
       />
+      {link_props?.label != "label" && (
+        <Box
+          alignItems="center"
+          display="flex"
+          justifyContent="flex-end"
+        >
+          <Link_frame
+            href={link_props?.href}
+            label={link_props?.label}
+            isSub={true}
+          />
+        </Box>
+      )}
     </FormControl>
   );
 };
 
-export { Form_frame, Form_Props };
+export type { Form_Props };
+export { Form_frame };
