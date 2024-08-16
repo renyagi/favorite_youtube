@@ -44,6 +44,7 @@ const LoginRightContainer = ({
           value: email,
           width: "100%",
         }}
+        isSub={false}
         label="E-mail"
         width="100%"
       />
@@ -61,23 +62,15 @@ const LoginRightContainer = ({
         }}
         width="100%"
       />
+      <Button_frame
+        label="Sign In"
+        width="100%"
+        onClick={handleClick}
+      />
       <Box
         display="flex"
         justifyContent="center"
         marginTop="20px"
-        width="100%"
-      >
-        <Button_frame
-          label="Sign In"
-          width="100%"
-          onClick={handleClick}
-        />
-      </Box>
-      <Box
-        display="flex"
-        justifyContent="center"
-        marginTop="20px"
-        width="100%"
       >
         <Link_frame
           href="#"
