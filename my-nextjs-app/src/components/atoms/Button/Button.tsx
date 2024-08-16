@@ -39,7 +39,7 @@ const Text = styled.div`
   color: ${theme.colors.white};
   font-size: ${theme.fontSizes.md};
   font-weight: ${theme.fontWeights.bold};
-  line-height: 16px;
+  line-height: 1.2;
   margin: 16px 24px;
   text-align: center;
   width: 100%;
