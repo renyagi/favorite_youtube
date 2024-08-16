@@ -6,21 +6,23 @@ import { Form_frame } from "../../../components/molecules/Form/Form";
 import { Link_frame } from "../../../components/atoms/Link/Link";
 import { Title_frame } from "../../../components/atoms/Title/Title";
 
-interface LoginRightContainer_Props {
+interface SignupRightContainer_Props {
   email?: string;
+  name?: string;
   password?: string;
-  onClick?: (email?: string, password?: string) => void;
+  onClick?: (email?: string, name?: string, password?: string) => void;
 }
 
-const LoginRightContainer = ({
+const SignupRightContainer = ({
   email,
+  name,
   password,
   onClick,
-}: LoginRightContainer_Props) => {
+}: SignupRightContainer_Props) => {
   const router = useRouter();
   const handleClick = () => {
     if (onClick) {
-      onClick(email, password);
+      onClick(email, name, password);
       router.push("#");
     }
   };
@@ -34,9 +36,16 @@ const LoginRightContainer = ({
       width="424px"
     >
       <Title_frame
-        isSub={true}
-        subTitle="Meet the good taste today"
-        title="Welcome back!"
+        title="Create your account"
+      />
+      <Form_frame
+        input_Props={{
+          placeholder: "Enter your name",
+          value: name,
+          width: "100%",
+        }}
+        label="Full name"
+        width="100%"
       />
       <Form_frame
         input_Props={{
@@ -53,12 +62,7 @@ const LoginRightContainer = ({
           value: password,
           width: "100%",
         }}
-        isSub={true}
         label="Password"
-        link_props={{
-          href: "#",
-          label: "Forgot Password?",
-        }}
         width="100%"
       />
       <Box
@@ -68,7 +72,7 @@ const LoginRightContainer = ({
         width="100%"
       >
         <Button_frame
-          label="Sign In"
+          label="Sign Up"
           width="100%"
           onClick={handleClick}
         />
@@ -81,12 +85,12 @@ const LoginRightContainer = ({
       >
         <Link_frame
           href="#"
-          label="Don’t have an account? Sign Up"
+          label="Aldready have an account? Sign In"
         />
       </Box>
     </Box>
   );
 };
 
-export type { LoginRightContainer_Props };
-export { LoginRightContainer };
+export type { SignupRightContainer_Props };
+export { SignupRightContainer };
