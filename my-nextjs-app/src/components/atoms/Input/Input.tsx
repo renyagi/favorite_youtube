@@ -32,4 +32,5 @@ const Input_frame = ({
   );
 };
 
-export { Input_frame, Input_Props };
+export type { Input_Props };
+export { Input_frame };
