@@ -4,6 +4,7 @@ const theme = {
     body: "Roboto, sans-serif",
   },
   fontSizes: {
+    xs: "11px",
     sm: "14px",
     md: "16px",
     lg: "18px",
@@ -22,6 +23,7 @@ const theme = {
   colors: {
     black: "#141416",
     gray: "#D9D9D9",
+    gray_dark: "#777E90",
     gray_light: "#EDF2F7",
     white: "#FCFCFD",
   },
