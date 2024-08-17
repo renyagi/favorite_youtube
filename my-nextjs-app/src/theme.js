@@ -13,6 +13,7 @@ const theme = {
     xl3: "30px",
     xl4: "36px",
     xl5: "48px",
+    xl6: "60px",
   },
   fontWeights: {
     normal: 400,
