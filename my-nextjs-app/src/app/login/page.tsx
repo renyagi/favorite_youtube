@@ -1,11 +1,15 @@
 "use client";
 
 import React from "react";
+import { LoginPage } from "../../sections/login/LoginPage/LoginPage"
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      Login
-    </main>
+    <LoginPage
+    // email={email}
+    // href={href}
+    // password={password}
+    // onClick={onClick}
+    />
   );
 }

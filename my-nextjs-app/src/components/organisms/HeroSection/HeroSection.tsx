@@ -11,7 +11,7 @@ interface HeroSection_Props {
 }
 
 const HeroSection_frame = ({
-  img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvgpinlcOMCDQu7egRHKp8mYoG-XNEf4j6Vw&s",
+  img = "https://s4.aconvert.com/convert/p3r68-cdx67/aa4wu-e2ad0.jpg",
   isSub = false,
   subTitle = "subTitle",
   title = "title",
@@ -20,7 +20,7 @@ const HeroSection_frame = ({
   return (
     <Box
       alignItems="center"
-      backgroundImage={`url('${img}')`}
+      backgroundImage={`url(${img})`}
       backgroundPosition="center"
       backgroundSize="cover"
       display="flex"
