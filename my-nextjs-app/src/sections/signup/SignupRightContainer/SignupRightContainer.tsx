@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import { Box } from "@chakra-ui/react";
 import { Button_frame } from "../../../components/atoms/Button/Button";
 import { Form_frame } from "../../../components/molecules/Form/Form";
