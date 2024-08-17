@@ -1,5 +1,4 @@
 import React from "react";
-import { useRouter } from 'next/router';
 import { Box } from "@chakra-ui/react";
 import { Button_frame } from "../../../components/atoms/Button/Button";
 import { Form_frame } from "../../../components/molecules/Form/Form";
@@ -8,6 +7,7 @@ import { Title_frame } from "../../../components/atoms/Title/Title";
 
 interface SignupRightContainer_Props {
   email?: string;
+  href?: string;
   name?: string;
   password?: string;
   onClick?: (email?: string, name?: string, password?: string) => void;
@@ -15,18 +15,11 @@ interface SignupRightContainer_Props {
 
 const SignupRightContainer = ({
   email,
+  href = "#",
   name,
   password,
   onClick,
 }: SignupRightContainer_Props) => {
-  const router = useRouter();
-  const handleClick = () => {
-    if (onClick) {
-      onClick(email, name, password);
-      router.push("#");
-    }
-  };
-
   return (
     <Box
       display="flex"
@@ -74,7 +67,7 @@ const SignupRightContainer = ({
         <Button_frame
           label="Sign Up"
           width="100%"
-          onClick={handleClick}
+          onClick={onClick}
         />
       </Box>
       <Box
@@ -84,7 +77,7 @@ const SignupRightContainer = ({
         width="100%"
       >
         <Link_frame
-          href="#"
+          href={href}
           label="Aldready have an account? Sign In"
         />
       </Box>
