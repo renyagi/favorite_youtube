@@ -20,7 +20,6 @@ const LoginPage = ({
     <Box
       display="flex"
       height="100vh"
-      gap="30px"
       justifyContent="space-between"
       width="100vw"
     >
@@ -35,6 +34,7 @@ const LoginPage = ({
         alignItems="center"
         display="flex"
         justifyContent="center"
+        margin="30px"
       >
         <LoginRightContainer
           email={email}
