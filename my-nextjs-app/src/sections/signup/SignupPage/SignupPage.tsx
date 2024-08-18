@@ -22,7 +22,6 @@ const SignupPage = ({
     <Box
       display="flex"
       height="100vh"
-      gap="30px"
       justifyContent="space-between"
       width="100vw"
     >
@@ -37,6 +36,7 @@ const SignupPage = ({
         alignItems="center"
         display="flex"
         justifyContent="center"
+        margin="30px"
       >
         <SignupRightContainer
           email={email}
