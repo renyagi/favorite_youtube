@@ -9,7 +9,6 @@ interface LoginRightContainer_Props {
   email?: string;
   href?: string;
   password?: string;
-  width?: string;
   onClick?: (email?: string, password?: string) => void;
 }
 
