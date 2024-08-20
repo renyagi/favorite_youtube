@@ -5,19 +5,17 @@ import { Form_frame } from "../../../components/molecules/Form/Form";
 import { Link_frame } from "../../../components/atoms/Link/Link";
 import { Title_frame } from "../../../components/atoms/Title/Title";
 
-interface LoginRightContainer_Props {
+interface MailSendingForm_Props {
   email?: string;
   href?: string;
-  password?: string;
   onClick?: (email?: string, password?: string) => void;
 }
 
-const LoginRightContainer = ({
+const MailSendingForm = ({
   email,
   href,
-  password,
   onClick,
-}: LoginRightContainer_Props) => {
+}: MailSendingForm_Props) => {
   return (
     <Box
       display="flex"
@@ -27,9 +25,8 @@ const LoginRightContainer = ({
       width="424px"
     >
       <Title_frame
-        isSub={true}
-        subTitle="Meet the good taste today"
-        title="Welcome back!"
+        isSub={false}
+        title="Reset your password"
       />
       <Form_frame
         input_Props={{
@@ -40,20 +37,6 @@ const LoginRightContainer = ({
         label="E-mail"
         width="100%"
       />
-      <Form_frame
-        input_Props={{
-          placeholder: "Type your password",
-          value: password,
-          width: "100%",
-        }}
-        isSub={true}
-        label="Password"
-        link_props={{
-          href: "#",
-          label: "Forgot Password?",
-        }}
-        width="100%"
-      />
       <Box
         display="flex"
         justifyContent="center"
@@ -61,7 +44,7 @@ const LoginRightContainer = ({
         width="100%"
       >
         <Button_frame
-          label="Sign In"
+          label="Send Email"
           width="100%"
           onClick={onClick}
         />
@@ -81,5 +64,5 @@ const LoginRightContainer = ({
   );
 };
 
-export type { LoginRightContainer_Props };
-export { LoginRightContainer };
+export type { MailSendingForm_Props };
+export { MailSendingForm };
