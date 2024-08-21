@@ -25,15 +25,15 @@ const MailSendingContainer = ({
       width="424px"
     >
       {isSent ? (
+        <Card_frame
+          title="Submission Complete"
+          text="The password change has not been completed. We have sent you an email with instructions on how to reset your password. Please check the email and complete the reset process within the next three hours."
+        />
+      ) : (
         <MailSendingForm
           email={email}
           href={href}
           onClick={onClick}
-        />
-      ) : (
-        <Card_frame
-          title=""
-          text=""
         />
       )}
     </Box>
