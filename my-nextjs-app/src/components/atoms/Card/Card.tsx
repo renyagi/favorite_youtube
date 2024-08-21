@@ -21,13 +21,13 @@ const Card_frame: React.FC<Card_Props> = ({
       display="flex"
       flexDirection="column"
       gap="16px"
+      padding="20px"
       width="400px"
     >
       <Heading
         color={theme.colors.black}
         fontSize={theme.fontSizes.lg}
         fontWeight={theme.fontWeights.bold}
-        margin="20px"
         textDecorationLine="underline"
       >
         {title}
