@@ -25,7 +25,7 @@ const Link_frame = ({
       {label}
     </Link>
   );
-}
+};
 
 export type { Link_Props };
 export { Link_frame };

@@ -11,11 +11,7 @@ interface MailSendingForm_Props {
   onClick?: (email?: string, password?: string) => void;
 }
 
-const MailSendingForm = ({
-  email,
-  href,
-  onClick,
-}: MailSendingForm_Props) => {
+const MailSendingForm = ({ email, href, onClick }: MailSendingForm_Props) => {
   return (
     <Box
       display="flex"
@@ -24,10 +20,7 @@ const MailSendingForm = ({
       justifyContent="center"
       width="424px"
     >
-      <Title_frame
-        isSub={false}
-        title="Reset your password"
-      />
+      <Title_frame isSub={false} title="Reset your password" />
       <Form_frame
         input_Props={{
           placeholder: "Type your e-mail",
@@ -37,28 +30,11 @@ const MailSendingForm = ({
         label="E-mail"
         width="100%"
       />
-      <Box
-        display="flex"
-        justifyContent="center"
-        marginTop="20px"
-        width="100%"
-      >
-        <Button_frame
-          label="Send Email"
-          width="100%"
-          onClick={onClick}
-        />
+      <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
+        <Button_frame label="Send Email" width="100%" onClick={onClick} />
       </Box>
-      <Box
-        display="flex"
-        justifyContent="center"
-        marginTop="20px"
-        width="100%"
-      >
-        <Link_frame
-          href={href}
-          label="Don’t have an account? Sign Up"
-        />
+      <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
+        <Link_frame href={href} label="Don’t have an account? Sign Up" />
       </Box>
     </Box>
   );

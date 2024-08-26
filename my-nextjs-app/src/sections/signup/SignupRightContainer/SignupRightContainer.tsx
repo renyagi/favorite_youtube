@@ -28,9 +28,7 @@ const SignupRightContainer = ({
       justifyContent="center"
       width="424px"
     >
-      <Title_frame
-        title="Create your account"
-      />
+      <Title_frame title="Create your account" />
       <Form_frame
         input_Props={{
           placeholder: "Enter your name",
@@ -58,28 +56,11 @@ const SignupRightContainer = ({
         label="Password"
         width="100%"
       />
-      <Box
-        display="flex"
-        justifyContent="center"
-        marginTop="20px"
-        width="100%"
-      >
-        <Button_frame
-          label="Sign Up"
-          width="100%"
-          onClick={onClick}
-        />
+      <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
+        <Button_frame label="Sign Up" width="100%" onClick={onClick} />
       </Box>
-      <Box
-        display="flex"
-        justifyContent="center"
-        marginTop="20px"
-        width="100%"
-      >
-        <Link_frame
-          href={href}
-          label="Aldready have an account? Sign In"
-        />
+      <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
+        <Link_frame href={href} label="Aldready have an account? Sign In" />
       </Box>
     </Box>
   );

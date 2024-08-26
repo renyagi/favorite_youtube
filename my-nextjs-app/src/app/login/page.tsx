@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { LoginPage } from "../../sections/login/LoginPage/LoginPage"
+import { LoginPage } from "../../sections/login/LoginPage/LoginPage";
 
 export default function Page() {
   return (

@@ -27,9 +27,7 @@ const Button_frame = ({
       }}
       onClick={onClick}
     >
-      <Text>
-        {label}
-      </Text>
+      <Text>{label}</Text>
     </Button>
   );
 };

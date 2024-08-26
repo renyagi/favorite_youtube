@@ -28,6 +28,6 @@ const theme = {
     gray_light: "#EDF2F7",
     white: "#FCFCFD",
   },
-}
+};
 
 export default theme;

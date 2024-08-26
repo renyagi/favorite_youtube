@@ -9,7 +9,7 @@ interface Card_Props {
 
 const Card_frame: React.FC<Card_Props> = ({
   title = "Title",
-  text = "This is a description."
+  text = "This is a description.",
 }) => {
   return (
     <Box

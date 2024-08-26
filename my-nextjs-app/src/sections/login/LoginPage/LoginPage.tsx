@@ -10,12 +10,7 @@ interface LoginPage_Props {
   onClick?: (email?: string, password?: string) => void;
 }
 
-const LoginPage = ({
-  email,
-  href,
-  password,
-  onClick,
-}: LoginPage_Props) => {
+const LoginPage = ({ email, href, password, onClick }: LoginPage_Props) => {
   return (
     <Box
       display="flex"

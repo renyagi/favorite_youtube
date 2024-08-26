@@ -26,10 +26,7 @@ const NewPasswordForm = ({
       justifyContent="center"
       width="424px"
     >
-      <Title_frame
-        isSub={false}
-        title="Set new password"
-      />
+      <Title_frame isSub={false} title="Set new password" />
       <Form_frame
         input_Props={{
           placeholder: "Type new password",
@@ -48,28 +45,11 @@ const NewPasswordForm = ({
         label="Password（Confirm）"
         width="100%"
       />
-      <Box
-        display="flex"
-        justifyContent="center"
-        marginTop="20px"
-        width="100%"
-      >
-        <Button_frame
-          label="Change Password"
-          width="100%"
-          onClick={onClick}
-        />
+      <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
+        <Button_frame label="Change Password" width="100%" onClick={onClick} />
       </Box>
-      <Box
-        display="flex"
-        justifyContent="center"
-        marginTop="20px"
-        width="100%"
-      >
-        <Link_frame
-          href={href}
-          label="Don’t have an account? Sign In"
-        />
+      <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
+        <Link_frame href={href} label="Don’t have an account? Sign In" />
       </Box>
     </Box>
   );

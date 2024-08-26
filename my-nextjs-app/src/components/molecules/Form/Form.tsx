@@ -20,12 +20,7 @@ const Form_frame = ({
   width = "400px",
 }: Form_Props) => {
   return (
-    <FormControl
-      display="flex"
-      flexDirection="column"
-      gap="8px"
-      width={width}
-    >
+    <FormControl display="flex" flexDirection="column" gap="8px" width={width}>
       <FormLabel
         color={theme.colors.black}
         fontSize={theme.fontSizes.sm}
@@ -40,11 +35,7 @@ const Form_frame = ({
         onChange={input_Props?.onChange}
       />
       {isSub && (
-        <Box
-          alignItems="center"
-          display="flex"
-          justifyContent="flex-end"
-        >
+        <Box alignItems="center" display="flex" justifyContent="flex-end">
           <Link_frame
             href={link_props?.href}
             label={link_props?.label}
