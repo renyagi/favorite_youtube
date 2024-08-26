@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { SignupPage } from "../../sections/signup/SignupPage/SignupPage"
+import { SignupPage } from "../../sections/signup/SignupPage/SignupPage";
 
 export default function Page() {
   return (

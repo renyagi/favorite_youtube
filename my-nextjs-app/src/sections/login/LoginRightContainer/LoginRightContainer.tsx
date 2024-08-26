@@ -54,28 +54,11 @@ const LoginRightContainer = ({
         }}
         width="100%"
       />
-      <Box
-        display="flex"
-        justifyContent="center"
-        marginTop="20px"
-        width="100%"
-      >
-        <Button_frame
-          label="Sign In"
-          width="100%"
-          onClick={onClick}
-        />
+      <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
+        <Button_frame label="Sign In" width="100%" onClick={onClick} />
       </Box>
-      <Box
-        display="flex"
-        justifyContent="center"
-        marginTop="20px"
-        width="100%"
-      >
-        <Link_frame
-          href={href}
-          label="Don’t have an account? Sign Up"
-        />
+      <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
+        <Link_frame href={href} label="Don’t have an account? Sign Up" />
       </Box>
     </Box>
   );

@@ -14,10 +14,7 @@ const Title_frame = ({
   title = "title",
 }) => {
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-    >
+    <Box display="flex" flexDirection="column">
       <Text
         color={theme.colors.black}
         fontSize={theme.fontSizes.xl2}

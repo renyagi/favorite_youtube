@@ -1,6 +1,9 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import { MailSendingForm, MailSendingForm_Props } from "../MailSendingForm/MailSendingForm";
+import {
+  MailSendingForm,
+  MailSendingForm_Props,
+} from "../MailSendingForm/MailSendingForm";
 import { Card_frame, Card_Props } from "../../../components/atoms/Card/Card";
 
 interface MailSendingContainer_Props {
@@ -30,11 +33,7 @@ const MailSendingContainer = ({
           text="The password change has not been completed. We have sent you an email with instructions on how to reset your password. Please check the email and complete the reset process within the next three hours."
         />
       ) : (
-        <MailSendingForm
-          email={email}
-          href={href}
-          onClick={onClick}
-        />
+        <MailSendingForm email={email} href={href} onClick={onClick} />
       )}
     </Box>
   );
