@@ -18,7 +18,11 @@ const SearchBar = ({
   onClick,
 }: SearchBar_Props) => {
   return (
-    <Box borderRadius="8px 0 0 8px" display="flex" width={width}>
+    <Box
+      borderRadius="8px 0 0 8px"
+      display="flex"
+      width={width}
+    >
       <Input_frame
         placeholder="Search..."
         value={value}
