@@ -3,25 +3,27 @@ import { Button, Text } from "@chakra-ui/react";
 import { FaStar } from "react-icons/fa";
 import theme from "../../../theme";
 
-interface IconButtonProps {
+interface IconButton_Props {
   icon?: React.ReactElement;
-  onClick?: () => void;
+  isSelected?: boolean;
   text?: string;
   width?: string;
+  onClick?: () => void;
 }
 
 const IconButton = ({
   icon = <FaStar size="32px" />,
+  isSelected = true,
   text = "text",
   width = "230px",
   onClick,
-}: IconButtonProps) => {
+}: IconButton_Props) => {
   return (
     <Button
       alignItems="center"
-      backgroundColor={theme.colors.black}
-      border="none"
-      color={theme.colors.white}
+      backgroundColor={theme.colors.white}
+      borderBottom={`1px solid ${isSelected ? theme.colors.blue : theme.colors.black}`}
+      color={isSelected ? theme.colors.blue : theme.colors.black}
       display="flex"
       height="48px"
       gap="20px"
@@ -30,10 +32,9 @@ const IconButton = ({
       width={width}
       onClick={onClick}
     >
-      {icon && React.cloneElement(icon, { color: theme.colors.gray, size: "24px" })}
+      {icon && React.cloneElement(icon, { color: isSelected ? theme.colors.blue : theme.colors.black, size: "24px" })}
       {text && (
         <Text
-          color={theme.colors.gray}
           fontSize={theme.fontSizes.lg}
           fontWeight={theme.fontWeights.bold}
         >
@@ -44,5 +45,5 @@ const IconButton = ({
   );
 };
 
-export type { IconButtonProps };
+export type { IconButton_Props };
 export { IconButton };
