@@ -9,7 +9,7 @@ interface Button_Props {
   onClick?: () => void;
 }
 
-const Button_frame = ({
+const Button = ({
   label = "label",
   width = "200px",
   onClick,
@@ -44,4 +44,4 @@ const Text = styled.div`
 `;
 
 export type { Button_Props };
-export { Button_frame };
+export { Button };

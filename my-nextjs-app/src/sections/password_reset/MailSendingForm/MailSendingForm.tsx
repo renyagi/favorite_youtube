@@ -1,9 +1,9 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import { Button_frame } from "../../../components/atoms/Button/Button";
-import { Form_frame } from "../../../components/molecules/Form/Form";
-import { Link_frame } from "../../../components/atoms/Link/Link";
-import { Title_frame } from "../../../components/atoms/Title/Title";
+import { Button } from "../../../components/atoms/Button/Button";
+import { Form } from "../../../components/molecules/Form/Form";
+import { Link } from "../../../components/atoms/Link/Link";
+import { Title } from "../../../components/atoms/Title/Title";
 
 interface MailSendingForm_Props {
   email?: string;
@@ -20,8 +20,8 @@ const MailSendingForm = ({ email, href, onClick }: MailSendingForm_Props) => {
       justifyContent="center"
       width="424px"
     >
-      <Title_frame isSub={false} title="Reset your password" />
-      <Form_frame
+      <Title isSub={false} title="Reset your password" />
+      <Form
         input_Props={{
           placeholder: "Type your e-mail",
           value: email,
@@ -31,10 +31,10 @@ const MailSendingForm = ({ email, href, onClick }: MailSendingForm_Props) => {
         width="100%"
       />
       <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
-        <Button_frame label="Send Email" width="100%" onClick={onClick} />
+        <Button label="Send Email" width="100%" onClick={onClick} />
       </Box>
       <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
-        <Link_frame href={href} label="Don’t have an account? Sign Up" />
+        <Link href={href} label="Don’t have an account? Sign Up" />
       </Box>
     </Box>
   );

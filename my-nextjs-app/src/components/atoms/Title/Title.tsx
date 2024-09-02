@@ -8,7 +8,7 @@ interface Title_Props {
   title: string;
 }
 
-const Title_frame = ({
+const Title = ({
   isSub = false,
   subTitle = "subTitle",
   title = "title",
@@ -40,4 +40,4 @@ const Title_frame = ({
 };
 
 export type { Title_Props };
-export { Title_frame };
+export { Title };

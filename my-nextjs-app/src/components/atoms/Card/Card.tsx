@@ -7,7 +7,7 @@ interface Card_Props {
   text?: string;
 }
 
-const Card_frame: React.FC<Card_Props> = ({
+const Card: React.FC<Card_Props> = ({
   title = "Title",
   text = "This is a description.",
 }) => {
@@ -44,4 +44,4 @@ const Card_frame: React.FC<Card_Props> = ({
 };
 
 export type { Card_Props };
-export { Card_frame };
+export { Card };

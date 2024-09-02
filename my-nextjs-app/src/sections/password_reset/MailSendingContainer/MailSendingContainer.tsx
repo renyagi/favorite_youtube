@@ -4,7 +4,7 @@ import {
   MailSendingForm,
   MailSendingForm_Props,
 } from "../MailSendingForm/MailSendingForm";
-import { Card_frame, Card_Props } from "../../../components/atoms/Card/Card";
+import { Card, Card_Props } from "../../../components/atoms/Card/Card";
 
 interface MailSendingContainer_Props {
   email?: string;
@@ -28,7 +28,7 @@ const MailSendingContainer = ({
       width="424px"
     >
       {isSent ? (
-        <Card_frame
+        <Card
           title="Submission Complete"
           text="The password change has not been completed. We have sent you an email with instructions on how to reset your password. Please check the email and complete the reset process within the next three hours."
         />

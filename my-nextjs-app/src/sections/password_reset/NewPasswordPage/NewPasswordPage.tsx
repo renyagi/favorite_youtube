@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import { NewPasswordForm } from "../NewPasswordForm/NewPasswordForm";
-import { HeroSection_frame } from "../../../components/organisms/HeroSection/HeroSection";
+import { HeroSection } from "../../../components/organisms/HeroSection/HeroSection";
 
 interface NewPasswordPage_Props {
   href?: string;
@@ -23,7 +23,7 @@ const NewPasswordPage = ({
       justifyContent="space-between"
       width="100vw"
     >
-      <HeroSection_frame
+      <HeroSection
         // img="#"
         isSub={true}
         subTitle="Endless entertainment, curated just for you."

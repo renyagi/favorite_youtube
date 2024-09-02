@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Title_frame } from "./Title";
+import { Title } from "./Title";
 
-const meta: Meta<typeof Title_frame> = {
-  title: "Components/Atoms/Title_frame",
-  component: Title_frame,
+const meta: Meta<typeof Title> = {
+  title: "Components/Atoms/Title",
+  component: Title,
   parameters: {
     layout: "centered",
   },
@@ -12,7 +12,7 @@ const meta: Meta<typeof Title_frame> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Title_frame>;
+type Story = StoryObj<typeof Title>;
 
 export const Default: Story = {
   args: {},
