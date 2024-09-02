@@ -8,7 +8,7 @@ interface Link_Props {
   isSub?: boolean;
 }
 
-const Link_frame = ({
+const Link = ({
   href = "#",
   label = "label",
   isSub = false,
@@ -28,4 +28,4 @@ const Link_frame = ({
 };
 
 export type { Link_Props };
-export { Link_frame };
+export { Link };

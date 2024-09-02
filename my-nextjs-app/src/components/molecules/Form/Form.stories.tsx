@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Form_frame } from "./Form";
+import { Form } from "./Form";
 
-const meta: Meta<typeof Form_frame> = {
-  title: "Components/Molecules/Form_frame",
-  component: Form_frame,
+const meta: Meta<typeof Form> = {
+  title: "Components/Molecules/Form",
+  component: Form,
   parameters: {
     layout: "centered",
   },
@@ -12,7 +12,7 @@ const meta: Meta<typeof Form_frame> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Form_frame>;
+type Story = StoryObj<typeof Form>;
 
 export const Default: Story = {
   args: {},

@@ -10,7 +10,7 @@ interface HeroSection_Props {
   width?: string;
 }
 
-const HeroSection_frame = ({
+const HeroSection = ({
   img = "https://s4.aconvert.com/convert/p3r68-cdx67/aa4wu-e2ad0.jpg",
   isSub = false,
   subTitle = "subTitle",
@@ -65,4 +65,4 @@ const HeroSection_frame = ({
 };
 
 export type { HeroSection_Props };
-export { HeroSection_frame };
+export { HeroSection };

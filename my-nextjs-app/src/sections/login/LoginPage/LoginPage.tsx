@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import { LoginRightContainer } from "../LoginRightContainer/LoginRightContainer";
-import { HeroSection_frame } from "../../../components/organisms/HeroSection/HeroSection";
+import { HeroSection } from "../../../components/organisms/HeroSection/HeroSection";
 
 interface LoginPage_Props {
   email?: string;
@@ -18,7 +18,7 @@ const LoginPage = ({ email, href, password, onClick }: LoginPage_Props) => {
       justifyContent="space-between"
       width="100vw"
     >
-      <HeroSection_frame
+      <HeroSection
         // img="#"
         isSub={true}
         subTitle="Endless entertainment, curated just for you."

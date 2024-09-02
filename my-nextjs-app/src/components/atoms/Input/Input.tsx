@@ -9,7 +9,7 @@ interface Input_Props {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input_frame = ({
+const Input = ({
   placeholder = "placeholder",
   value,
   width = "400px",
@@ -34,4 +34,4 @@ const Input_frame = ({
 };
 
 export type { Input_Props };
-export { Input_frame };
+export { Input };

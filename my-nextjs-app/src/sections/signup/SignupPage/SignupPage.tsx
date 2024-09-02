@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import { SignupRightContainer } from "../SignupRightContainer/SignupRightContainer";
-import { HeroSection_frame } from "../../../components/organisms/HeroSection/HeroSection";
+import { HeroSection } from "../../../components/organisms/HeroSection/HeroSection";
 
 interface SignupPage_Props {
   email?: string;
@@ -25,7 +25,7 @@ const SignupPage = ({
       justifyContent="space-between"
       width="100vw"
     >
-      <HeroSection_frame
+      <HeroSection
         // img="#"
         isSub={true}
         subTitle="Endless entertainment, curated just for you."

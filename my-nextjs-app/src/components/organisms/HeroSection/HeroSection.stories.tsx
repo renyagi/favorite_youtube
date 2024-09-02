@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { HeroSection_frame } from "./HeroSection";
+import { HeroSection } from "./HeroSection";
 
-const meta: Meta<typeof HeroSection_frame> = {
-  title: "Components/Organisms/HeroSection_frame",
-  component: HeroSection_frame,
+const meta: Meta<typeof HeroSection> = {
+  title: "Components/Organisms/HeroSection",
+  component: HeroSection,
   parameters: {
     layout: "centered",
   },
@@ -12,7 +12,7 @@ const meta: Meta<typeof HeroSection_frame> = {
 
 export default meta;
 
-type Story = StoryObj<typeof HeroSection_frame>;
+type Story = StoryObj<typeof HeroSection>;
 
 export const Default: Story = {
   args: {},

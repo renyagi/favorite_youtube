@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import { MailSendingContainer } from "../MailSendingContainer/MailSendingContainer";
-import { HeroSection_frame } from "../../../components/organisms/HeroSection/HeroSection";
+import { HeroSection } from "../../../components/organisms/HeroSection/HeroSection";
 
 interface MailSendingPage_Props {
   email?: string;
@@ -23,7 +23,7 @@ const MailSendingPage = ({
       justifyContent="space-between"
       width="100vw"
     >
-      <HeroSection_frame
+      <HeroSection
         // img="#"
         isSub={true}
         subTitle="Endless entertainment, curated just for you."

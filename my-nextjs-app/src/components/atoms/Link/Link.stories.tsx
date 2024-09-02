@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Link_frame } from "./Link";
+import { Link } from "./Link";
 
-const meta: Meta<typeof Link_frame> = {
-  title: "Components/Atoms/Link_frame",
-  component: Link_frame,
+const meta: Meta<typeof Link> = {
+  title: "Components/Atoms/Link",
+  component: Link,
   parameters: {
     layout: "centered",
   },
@@ -12,7 +12,7 @@ const meta: Meta<typeof Link_frame> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Link_frame>;
+type Story = StoryObj<typeof Link>;
 
 export const Default: Story = {
   args: {},

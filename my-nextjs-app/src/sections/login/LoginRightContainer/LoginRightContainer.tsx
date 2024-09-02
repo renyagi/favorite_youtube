@@ -1,9 +1,9 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import { Button_frame } from "../../../components/atoms/Button/Button";
-import { Form_frame } from "../../../components/molecules/Form/Form";
-import { Link_frame } from "../../../components/atoms/Link/Link";
-import { Title_frame } from "../../../components/atoms/Title/Title";
+import { Button } from "../../../components/atoms/Button/Button";
+import { Form } from "../../../components/molecules/Form/Form";
+import { Link } from "../../../components/atoms/Link/Link";
+import { Title } from "../../../components/atoms/Title/Title";
 
 interface LoginRightContainer_Props {
   email?: string;
@@ -26,12 +26,12 @@ const LoginRightContainer = ({
       justifyContent="center"
       width="424px"
     >
-      <Title_frame
+      <Title
         isSub={true}
         subTitle="Meet the good taste today"
         title="Welcome back!"
       />
-      <Form_frame
+      <Form
         input_Props={{
           placeholder: "Type your e-mail",
           value: email,
@@ -40,7 +40,7 @@ const LoginRightContainer = ({
         label="E-mail"
         width="100%"
       />
-      <Form_frame
+      <Form
         input_Props={{
           placeholder: "Type your password",
           value: password,
@@ -55,10 +55,10 @@ const LoginRightContainer = ({
         width="100%"
       />
       <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
-        <Button_frame label="Sign In" width="100%" onClick={onClick} />
+        <Button label="Sign In" width="100%" onClick={onClick} />
       </Box>
       <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
-        <Link_frame href={href} label="Don’t have an account? Sign Up" />
+        <Link href={href} label="Don’t have an account? Sign Up" />
       </Box>
     </Box>
   );
