@@ -32,12 +32,13 @@ const IconButton = ({
       width={width}
       onClick={onClick}
     >
-      {icon && React.cloneElement(icon, { color: isSelected ? theme.colors.blue : theme.colors.black, size: "24px" })}
+      {icon &&
+        React.cloneElement(icon, {
+          color: isSelected ? theme.colors.blue : theme.colors.black,
+          size: "24px",
+        })}
       {text && (
-        <Text
-          fontSize={theme.fontSizes.lg}
-          fontWeight={theme.fontWeights.bold}
-        >
+        <Text fontSize={theme.fontSizes.lg} fontWeight={theme.fontWeights.bold}>
           {text}
         </Text>
       )}

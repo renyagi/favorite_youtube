@@ -8,11 +8,7 @@ interface Link_Props {
   isSub?: boolean;
 }
 
-const Link = ({
-  href = "#",
-  label = "label",
-  isSub = false,
-}: Link_Props) => {
+const Link_s = ({ href = "#", label = "label", isSub = false }: Link_Props) => {
   return (
     <Link
       color={isSub ? theme.colors.gray_dark : theme.colors.black}
@@ -28,4 +24,4 @@ const Link = ({
 };
 
 export type { Link_Props };
-export { Link };
+export { Link_s };

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, FormControl, FormLabel } from "@chakra-ui/react";
-import { Input, Input_Props } from "../../atoms/Input/Input";
-import { Link, Link_Props } from "../../atoms/Link/Link";
+import { Input_s, Input_Props } from "../../atoms/Input/Input";
+import { Link_s, Link_Props } from "../../atoms/Link/Link";
 import theme from "../../../theme";
 
 interface Form_Props {
@@ -28,7 +28,7 @@ const Form = ({
       >
         {label}
       </FormLabel>
-      <Input
+      <Input_s
         placeholder={input_Props?.placeholder}
         value={input_Props?.value}
         width={input_Props?.width}
@@ -36,7 +36,7 @@ const Form = ({
       />
       {isSub && (
         <Box alignItems="center" display="flex" justifyContent="flex-end">
-          <Link
+          <Link_s
             href={link_props?.href}
             label={link_props?.label}
             isSub={true}
