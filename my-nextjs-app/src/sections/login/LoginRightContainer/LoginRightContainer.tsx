@@ -1,8 +1,8 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import { Button } from "../../../components/atoms/Button/Button";
+import { Button_s } from "../../../components/atoms/Button/Button";
 import { Form } from "../../../components/molecules/Form/Form";
-import { Link } from "../../../components/atoms/Link/Link";
+import { Link_s } from "../../../components/atoms/Link/Link";
 import { Title } from "../../../components/atoms/Title/Title";
 
 interface LoginRightContainer_Props {
@@ -55,10 +55,10 @@ const LoginRightContainer = ({
         width="100%"
       />
       <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
-        <Button label="Sign In" width="100%" onClick={onClick} />
+        <Button_s label="Sign In" width="100%" onClick={onClick} />
       </Box>
       <Box display="flex" justifyContent="center" marginTop="20px" width="100%">
-        <Link href={href} label="Don’t have an account? Sign Up" />
+        <Link_s href={href} label="Don’t have an account? Sign Up" />
       </Box>
     </Box>
   );

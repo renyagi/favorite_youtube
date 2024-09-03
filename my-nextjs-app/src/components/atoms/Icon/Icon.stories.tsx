@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Link_s } from "./Link";
+import { Icon } from "./Icon";
 
-const meta: Meta<typeof Link_s> = {
-  title: "Components/Atoms/Link",
-  component: Link_s,
+const meta: Meta<typeof Icon> = {
+  title: "Components/Atoms/Icon",
+  component: Icon,
   parameters: {
     layout: "centered",
   },
@@ -12,7 +12,7 @@ const meta: Meta<typeof Link_s> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Link_s>;
+type Story = StoryObj<typeof Icon>;
 
 export const Default: Story = {
   args: {},

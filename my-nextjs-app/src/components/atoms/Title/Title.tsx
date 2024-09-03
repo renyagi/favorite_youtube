@@ -8,11 +8,7 @@ interface Title_Props {
   title: string;
 }
 
-const Title = ({
-  isSub = false,
-  subTitle = "subTitle",
-  title = "title",
-}) => {
+const Title = ({ isSub = false, subTitle = "subTitle", title = "title" }) => {
   return (
     <Box display="flex" flexDirection="column">
       <Text

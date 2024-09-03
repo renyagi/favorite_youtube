@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button } from "@chakra-ui/react";
 import { FaSearch } from "react-icons/fa";
-import { Input } from "../../atoms/Input/Input";
+import { Input_s } from "../../atoms/Input/Input";
 import theme from "../../../theme";
 
 interface SearchBar_Props {
@@ -18,12 +18,8 @@ const SearchBar = ({
   onClick,
 }: SearchBar_Props) => {
   return (
-    <Box
-      borderRadius="8px 0 0 8px"
-      display="flex"
-      width={width}
-    >
-      <Input
+    <Box borderRadius="8px 0 0 8px" display="flex" width={width}>
+      <Input_s
         placeholder="Search..."
         value={value}
         width="100%"
