@@ -5,7 +5,7 @@ import { Link_s, Link_Props } from "../../atoms/Link/Link";
 import theme from "../../../theme";
 
 interface Form_Props {
-  input_Props?: Input_Props;
+  input_props?: Input_Props;
   isSub?: boolean;
   label?: string;
   link_props?: Link_Props;
@@ -13,7 +13,7 @@ interface Form_Props {
 }
 
 const Form = ({
-  input_Props,
+  input_props,
   isSub = false,
   label = "label",
   link_props,
@@ -28,19 +28,10 @@ const Form = ({
       >
         {label}
       </FormLabel>
-      <Input_s
-        placeholder={input_Props?.placeholder}
-        value={input_Props?.value}
-        width={input_Props?.width}
-        onChange={input_Props?.onChange}
-      />
+      <Input_s {...input_props} />
       {isSub && (
         <Box alignItems="center" display="flex" justifyContent="flex-end">
-          <Link_s
-            href={link_props?.href}
-            label={link_props?.label}
-            isSub={true}
-          />
+          <Link_s {...link_props} isSub={true} />
         </Box>
       )}
     </FormControl>
