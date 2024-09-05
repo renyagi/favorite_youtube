@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-import { IconButton } from "../../molecules/IconButton/IconButton";
+import { SidebarButton } from "../../molecules/SidebarButton/SidebarButton";
 import theme from "../../../theme";
 
 interface Sidebar_Props {
@@ -26,7 +26,7 @@ const Sidebar = ({ isSelected = "Home", onClick }: Sidebar_Props) => (
     </Text>
     <Box>
       {["Home", "Search", "Create Playlist", "Favorite List"].map((item) => (
-        <IconButton
+        <SidebarButton
           key={item}
           isSelected={isSelected === item}
           onClick={() => onClick && onClick(item)}
