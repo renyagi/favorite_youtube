@@ -13,7 +13,11 @@ interface AccountDropdown_Props {
   onClick?: (value: string) => void;
 }
 
-const AccountDropdown = ({ accountinfo_props, width = "270px", onClick }: AccountDropdown_Props) => {
+const AccountDropdown = ({
+  accountinfo_props,
+  width = "270px",
+  onClick,
+}: AccountDropdown_Props) => {
   return (
     <Box
       backgroundColor={theme.colors.white}
