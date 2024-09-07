@@ -25,6 +25,9 @@ const Input_s = ({
       fontSize={theme.fontSizes.md}
       fontWeight={theme.fontWeights.bold}
       padding="14px"
+      _hover={{
+        border: "none",
+      }}
       placeholder={placeholder}
       value={value}
       width={width}
