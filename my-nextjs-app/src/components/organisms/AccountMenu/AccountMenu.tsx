@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Box } from "@chakra-ui/react";
-import theme from "../../../theme";
-import { IconButton, IconButton_Props } from "../../molecules/IconButton/IconButton";
+import {
+  IconButton,
+  IconButton_Props,
+} from "../../molecules/IconButton/IconButton";
 import {
   AccountDropdown,
   AccountDropdown_Props,
@@ -12,19 +14,18 @@ interface AccountMenu_Props {
   iconbutton_props?: IconButton_Props;
 }
 
-const AccountMenu = ({ accountdropdown_props, iconbutton_props }: AccountMenu_Props) => {
+const AccountMenu = ({
+  accountdropdown_props,
+  iconbutton_props,
+}: AccountMenu_Props) => {
   const [isOpen, setOpen] = useState<boolean>(false);
 
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      gap="10px"
-      width="270px"
-    >
+    <Box display="flex" flexDirection="column" gap="10px" width="270px">
       <Box
         height="34px"
         margin="0 0 0 auto"
+        position="fixed"
       >
         <IconButton
           {...iconbutton_props}
@@ -33,12 +34,7 @@ const AccountMenu = ({ accountdropdown_props, iconbutton_props }: AccountMenu_Pr
           }}
         />
       </Box>
-      {isOpen && (
-        <AccountDropdown
-          {...accountdropdown_props}
-          width="100%"
-        />
-      )}
+      {isOpen && <AccountDropdown {...accountdropdown_props} width="100%" />}
     </Box>
   );
 };
