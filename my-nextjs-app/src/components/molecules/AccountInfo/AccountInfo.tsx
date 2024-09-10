@@ -27,7 +27,7 @@ const AccountInfo = ({
       padding="18px"
       width={width}
     >
-      <Icon {...icon_props} />
+      <Icon {...icon_props} size="34px" />
       <Box>
         <Text
           color={theme.colors.black}
