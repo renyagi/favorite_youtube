@@ -22,11 +22,7 @@ const AccountMenu = ({
 
   return (
     <Box display="flex" flexDirection="column" gap="10px" width="270px">
-      <Box
-        height="34px"
-        margin="0 0 0 auto"
-        position="fixed"
-      >
+      <Box height="34px" margin="0 0 0 auto" position="fixed">
         <IconButton
           {...iconbutton_props}
           onClick={() => {
