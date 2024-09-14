@@ -7,7 +7,7 @@ interface VideoThumbnail_Props {
 }
 
 const VideoThumbnail: React.FC<VideoThumbnail_Props> = ({
-  thumbnail = "#",
+  thumbnail = "https://files.oaiusercontent.com/file-Se8NLv3wUNT2g47mup9w3AZY?se=2024-09-14T06%3A45%3A41Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D66318a9f-8338-4726-bf24-9da49d493056.webp&sig=TCT5gPC/hNcJfMGvxEjU/Gbk8sTVd5mrYQfF8t7pGfs%3D",
   previewVideo = "#",
 }) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
