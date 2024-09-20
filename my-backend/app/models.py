@@ -5,27 +5,21 @@ class User_Model(models.Model):
     class Meta:
         db_table = "User"
 
-    user_id = models.CharField(
-        verbose_name="userid",
-        blank=True,
-        null=True,
-        max_length=225,
-        default="",
-    )
-
     user_name = models.CharField(
-        verbose_name="username",
-        blank=True,
-        null=True,
-        max_length=225,
+        verbose_name="name",
+        max_length=128,
         default="",
     )
 
     user_email = models.CharField(
-        verbose_name="useremail",
-        blank=True,
-        null=True,
-        max_length=225,
+        verbose_name="email",
+        max_length=128,
+        default="",
+    )
+    
+    user_password = models.CharField(
+        verbose_name="password",
+        max_length=128,
         default="",
     )
 
